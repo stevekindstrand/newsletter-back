@@ -1,0 +1,19 @@
+//Change newsletter to true or false
+PUT http://localhost:4000/register
+Content-Type: application/json
+
+{
+    "_id": "628f6e18a26125a7798424a3",
+    "newsletter": false
+}
+
+###
+
+//log in
+POST http://localhost:4000/login
+Content-Type: application/json
+
+{
+    "email": "s@mail.com",
+    "password": "s"
+}
