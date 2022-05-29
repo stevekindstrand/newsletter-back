@@ -7,7 +7,7 @@
 npm install\
 npm run (http://localhost:3000)\\
 
-user: s@mail.com
+user: s@mail.com\
 password: s
 
 ### Back:
@@ -15,5 +15,5 @@ password: s
 npm install\
 npm run start (http://localhost:4000)\\
 
-user: admin
+user: admin\
 password: admin
