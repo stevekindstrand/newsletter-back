@@ -4,7 +4,7 @@ Content-Type: application/json
 
 {
     "_id": "628f6e18a26125a7798424a3",
-    "newsletter": false
+    "newsletter": true
 }
 
 ###

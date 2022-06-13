@@ -28,8 +28,19 @@ router.get("/", (req, res) => {
 });
 
 router.get("/admin", async (req, res) => {
-  const register = await User.find();
-  res.status(200).json(register);
+  const users = await User.find();
+
+  let userInfo = `<div>`;
+
+  users.forEach((user) => {
+    userInfo += `
+      <p><b>ID:</b> ${user._id}</p>
+      <p><b>Name:</b> ${user.firstName} ${user.lastName}</p>
+      <p><b>Email:</b> ${user.email}</p>
+      <p><b>Signed up to newsletter:</b> ${user.newsletter}</p>
+    </div><br />`;
+  });
+  res.send(userInfo);
 });
 
 module.exports = router;
